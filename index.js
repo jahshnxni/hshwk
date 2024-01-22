@@ -54,7 +54,7 @@ app.get("/generate/:days/:key", (req, res) => {
   apiKeys.push(newApiKey);
   saveApiKeysToFile();
 
-  return res.status(201).json({ message: "API key berhasil dibuat." });
+  return res.status(200).json({ message: "API key berhasil dibuat." });
 });
 /*
 app.get('/generate30/:key', (req, res) => {
